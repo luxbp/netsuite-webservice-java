@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97db162d-a611-44a3-8414-40738920d635" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ bitbucket-pipelines.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666119348607</updated>
       <workItem from="1666119350945" duration="6340000" />
-      <workItem from="1666127842784" duration="2367000" />
+      <workItem from="1666127842784" duration="3100000" />
     </task>
     <servers />
   </component>

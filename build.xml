@@ -1,7 +1,7 @@
 <project basedir=".">
 
     <path id="axis.classpath">
-        <fileset dir="target/lib">
+        <fileset dir="lib">
             <include name="**/*.jar" />
         </fileset>
     </path>
