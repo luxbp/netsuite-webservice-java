@@ -29,13 +29,13 @@ public class ConnectionTest {
         service = new NetSuiteServiceLocator();
         service.setMaintainSession(true);
 
-        port = getNetSuitePort(dotenv.get("NETSUITE_ACCOUNT"), new URL(service.getNetSuitePortAddress()));
+        port = getNetSuitePort(dotenv.get("NETSUITE_ACCOUNT_ID"), new URL(service.getNetSuitePortAddress()));
 
         String nonce = RandomStringUtils.randomAlphanumeric(20);
         Long timeStamp = System.currentTimeMillis() / 1000L;
 
         String signature = computeSignature(
-                dotenv.get("NETSUITE_ACCOUNT"),
+                dotenv.get("NETSUITE_ACCOUNT_ID"),
                 dotenv.get("NETSUITE_CONSUMER_KEY"),
                 dotenv.get("NETSUITE_CONSUMER_SECRET"),
                 dotenv.get("NETSUITE_TOKEN"),
@@ -48,7 +48,7 @@ public class ConnectionTest {
         sig.setAlgorithm(SignatureAlgorithm._HMAC_SHA256);
 
         TokenPassport passport = new TokenPassport(
-                dotenv.get("NETSUITE_ACCOUNT"),
+                dotenv.get("NETSUITE_ACCOUNT_ID"),
                 dotenv.get("NETSUITE_CONSUMER_KEY"),
                 dotenv.get("NETSUITE_TOKEN"),
                 nonce, // nonce
