@@ -1,6 +1,9 @@
 # NetSuite Webservice
 
+Recommended JVM: [Azul Zulu: Java 8 LTS](https://www.azul.com/downloads/?version=java-8-lts&package=jdk)
+
 This repository is for building the WSDL Dependency for interacting with Netsuite's SOAP Service.
+
 
 ## Install from Github Packages
 - Setup a `~/.m2/settings.xml` profile with Github credentials.
