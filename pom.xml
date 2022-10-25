@@ -21,6 +21,14 @@
         </developer>
     </developers>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub LUXBP Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/luxbp/netsuite-webservice-java</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
 
         <dependency>
