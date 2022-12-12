@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97db162d-a611-44a3-8414-40738920d635" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/netsuite/application/NetsuiteSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
       <workItem from="1666703647100" duration="3071000" />
       <workItem from="1666708830226" duration="1526000" />
       <workItem from="1666713942089" duration="461000" />
-      <workItem from="1670850656093" duration="4193000" />
+      <workItem from="1670850656093" duration="5277000" />
     </task>
     <servers />
   </component>

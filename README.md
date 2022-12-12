@@ -20,11 +20,41 @@ This repository is for building the WSDL Dependency for interacting with Netsuit
 
 - Run `mvn install`
 
+## Configuration
+Copy `.env.example` to `.env` in the root directory and fill out credentials.
+
+## Usage
+
+```java
+import com.netsuite.application.NetsuiteSession;
+import com.netsuite.webservices.platform_2022_1.NetSuitePortType;
+import io.github.cdimascio.dotenv.Dotenv;
+
+public class MyClass {
+    public void main () {
+      Dotenv dotenv = Dotenv.configure()
+              .directory("/path/to/config")
+              .filename("env")
+              .load();
+
+      NetsuiteSession session = new NetsuiteSession(dotenv);
+
+      // To load default .env, simply use:
+      // NetsuiteSession session = new NetsuiteSession();
+
+      // Use passport...
+      NetSuitePortType passport = session.getPort();
+      // ...
+    }
+}
+
+```
+
+
 ## Deployments
 This package is automatically deployed to Github packages when a release tag is created using a workflow located in [.github/workflows/maven-deploy.yml](./.github/workflows/maven-deploy.yml)
 
-## Configuration
-Copy `.env.example` to `.env` in the root directly and fill out credentials.
+
 
 ## Build
 - Run `mvn clean` first if updating.
