@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="97db162d-a611-44a3-8414-40738920d635" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bitbucket-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bitbucket-pipelines.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netsuite/application/NetsuiteAbstractProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/netsuite/application/NetsuiteAbstractProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <workItem from="1666713942089" duration="461000" />
       <workItem from="1670850656093" duration="5797000" />
       <workItem from="1671036486137" duration="6254000" />
-      <workItem from="1671117739247" duration="3645000" />
+      <workItem from="1671117739247" duration="4625000" />
     </task>
     <servers />
   </component>
