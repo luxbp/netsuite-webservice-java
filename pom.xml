@@ -6,7 +6,7 @@
 
     <groupId>com.netsuite</groupId>
     <artifactId>webservices</artifactId>
-    <version>2022.1</version>
+    <version>2022.1.3</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
