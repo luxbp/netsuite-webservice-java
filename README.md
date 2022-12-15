@@ -43,8 +43,11 @@ public class MyClass {
     // NetsuiteSession session = new NetsuiteSession();
 
     // Use passport...
-    NetSuitePortType passport = session.getService();
+    NetSuitePortType port = session.getService();
     // ...
+
+    // If session previously initialized, call the static instance
+    // NetSuitePortType port = NetsuiteServiceManager.getInstance();
   }
 }
 
