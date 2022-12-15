@@ -14,19 +14,18 @@ import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import java.net.URL;
 
-public class NetsuiteSession {
+public class NetsuiteServiceManager {
     protected Dotenv environment;
 
     protected NetSuiteServiceLocator service;
-
-    protected NetSuitePortType port;
+    protected static NetSuitePortType port;
 
     /**
      * Initializes the netsuite session, loading default .env
      *
      * @throws Exception
      */
-    public NetsuiteSession() throws Exception {
+    public NetsuiteServiceManager() throws Exception {
         environment = Dotenv.load();
         this.setSession();
     }
@@ -39,12 +38,20 @@ public class NetsuiteSession {
      *
      * @throws Exception
      */
-    public NetsuiteSession(Dotenv environment) throws Exception {
+    public NetsuiteServiceManager(Dotenv environment) throws Exception {
         this.environment = environment;
         this.setSession();
     }
 
-    public NetSuitePortType getPort() {
+    public final static NetSuitePortType getInstance() throws Exception {
+        if (NetsuiteServiceManager.port != null) {
+            return NetsuiteServiceManager.port;
+        }
+
+        throw new RuntimeException("Service must be initialized.");
+    }
+
+    public NetSuitePortType getService() {
         return port;
     }
 

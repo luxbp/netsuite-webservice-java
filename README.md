@@ -26,26 +26,26 @@ Copy `.env.example` to `.env` in the root directory and fill out credentials.
 ## Usage
 
 ```java
-import com.netsuite.application.NetsuiteSession;
+import com.netsuite.application.NetsuiteServiceManager;
 import com.netsuite.webservices.platform_2022_1.NetSuitePortType;
 import io.github.cdimascio.dotenv.Dotenv;
 
 public class MyClass {
-    public void main () {
-      Dotenv dotenv = Dotenv.configure()
-              .directory("/path/to/config")
-              .filename("env")
-              .load();
+  public void main() {
+    Dotenv dotenv = Dotenv.configure()
+            .directory("/path/to/config")
+            .filename("env")
+            .load();
 
-      NetsuiteSession session = new NetsuiteSession(dotenv);
+    NetsuiteServiceManager session = new NetsuiteServiceManager(dotenv);
 
-      // To load default .env, simply use:
-      // NetsuiteSession session = new NetsuiteSession();
+    // To load default .env, simply use:
+    // NetsuiteSession session = new NetsuiteSession();
 
-      // Use passport...
-      NetSuitePortType passport = session.getPort();
-      // ...
-    }
+    // Use passport...
+    NetSuitePortType passport = session.getService();
+    // ...
+  }
 }
 
 ```
