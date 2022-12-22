@@ -18,8 +18,10 @@ import java.util.Map;
 
 public class NetsuiteServiceManager {
     protected static Map<String, Dotenv> environments = new HashMap<>();
-protected static Map<String, NetSuitePortType> port = new HashMap<>();
-        protected NetSuiteServiceLocator service;;
+    protected static Map<String, NetSuitePortType> port = new HashMap<>();
+
+    protected NetSuiteServiceLocator service;
+
 
     /**
      * Initializes the netsuite session, loading default .env
