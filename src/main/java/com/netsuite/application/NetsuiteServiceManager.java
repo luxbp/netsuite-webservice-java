@@ -13,12 +13,13 @@ import org.apache.commons.lang3.RandomStringUtils;
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
 public class NetsuiteServiceManager {
-    protected Dotenv environment;
-
-    protected NetSuiteServiceLocator service;
-    protected static NetSuitePortType port;
+    protected static Map<String, Dotenv> environments = new HashMap<>();
+protected static Map<String, NetSuitePortType> port = new HashMap<>();
+        protected NetSuiteServiceLocator service;;
 
     /**
      * Initializes the netsuite session, loading default .env
@@ -26,8 +27,10 @@ public class NetsuiteServiceManager {
      * @throws Exception
      */
     public NetsuiteServiceManager() throws Exception {
-        environment = Dotenv.load();
-        this.setSession();
+        Dotenv env = Dotenv.load();
+        String envName = env.get("NETSUITE_ACCOUNT_ID");
+        environments.put(envName, Dotenv.load());
+        this.setSession(envName);
     }
 
     /**
@@ -38,42 +41,66 @@ public class NetsuiteServiceManager {
      *
      * @throws Exception
      */
-    public NetsuiteServiceManager(Dotenv environment) throws Exception {
-        this.environment = environment;
-        this.setSession();
+    public NetsuiteServiceManager(Dotenv environments) throws Exception {
+        String envName = environments.get("NETSUITE_ACCOUNT_ID");
+        NetsuiteServiceManager.environments.put(envName, environments);
+        this.setSession(envName);
     }
 
-    public final static NetSuitePortType getInstance() throws Exception {
-        if (NetsuiteServiceManager.port != null) {
-            return NetsuiteServiceManager.port;
-        }
-
-        throw new RuntimeException("Service must be initialized.");
+    protected static String getFirstEnv() {
+        return environments.keySet().iterator().next();
     }
 
-    public NetSuitePortType getService() {
-        return port;
+    public static Map<String, Dotenv> getEnvironments() {
+        return environments;
     }
 
-    protected void setSession() throws Exception {
+    public final static Dotenv getEnvironment() {
+        return getEnvironment(getFirstEnv());
+    }
+
+    public final static Dotenv getEnvironment(String key) {
+        return environments.get(key);
+    }
+
+    public final static NetSuitePortType getInstance() {
+        return NetsuiteServiceManager.getInstance(getFirstEnv());
+    }
+
+    public static NetSuitePortType getInstance(String envName) throws RuntimeException {
+        return getService(envName);
+    }
+
+    public static NetSuitePortType getService() {
+        return port.get(getFirstEnv());
+    }
+
+    public static NetSuitePortType getService(String envName) {
+        return port.get(envName);
+    }
+
+    protected void setSession(String envName) throws Exception {
+        Dotenv env = environments.get(envName);
         service = new NetSuiteServiceLocator();
         service.setMaintainSession(true);
-        port = createPort(environment.get("NETSUITE_ACCOUNT_ID"), new URL(service.getNetSuitePortAddress()));
+        NetSuitePortType port = createPort(env.get("NETSUITE_ACCOUNT_ID"), new URL(service.getNetSuitePortAddress()));
 
         // Setting the token on the port
         NetSuiteBindingStub stub = ((NetSuiteBindingStub) port);
         stub.clearHeaders();
         stub.setHeader(
-                String.format("urn:messages_%s.platform.webservices.netsuite.com", environment.get("NETSUITE_VERSION", "2022_1")),
+                String.format("urn:messages_%s.platform.webservices.netsuite.com", env.get("NETSUITE_VERSION", "2022_1")),
                 "tokenPassport",
-                createPassport()
+                createPassport(env)
         );
+
+        NetsuiteServiceManager.port.put(env.get("NETSUITE_ACCOUNT_ID"), port);
     }
 
-    protected TokenPassport createPassport() throws Exception {
+    protected TokenPassport createPassport(Dotenv environment) throws Exception {
 
         String nonce = RandomStringUtils.randomAlphanumeric(20);
-        Long timeStamp = System.currentTimeMillis() / 1000L;
+        long timeStamp = System.currentTimeMillis() / 1000L;
 
         String signature = computeSignature(
                 environment.get("NETSUITE_ACCOUNT_ID"),
@@ -88,7 +115,7 @@ public class NetsuiteServiceManager {
         TokenPassportSignature sig = new TokenPassportSignature(signature);
         sig.setAlgorithm(SignatureAlgorithm._HMAC_SHA256);
 
-        TokenPassport passport = new TokenPassport(
+        return new TokenPassport(
                 environment.get("NETSUITE_ACCOUNT_ID"),
                 environment.get("NETSUITE_CONSUMER_KEY"),
                 environment.get("NETSUITE_TOKEN"),
@@ -96,8 +123,6 @@ public class NetsuiteServiceManager {
                 timeStamp, // timestamp
                 sig
         );
-
-        return passport;
     }
 
     protected NetSuitePortType createPort(String account, URL defaultWsDomainURL) {
@@ -124,9 +149,7 @@ public class NetsuiteServiceManager {
 
         byte[] hash = messageAuthenticationCode.doFinal(baseString.getBytes());
 
-        String result = new String(java.util.Base64.getEncoder().encode(hash));
-
-        return result;
+        return new String(java.util.Base64.getEncoder().encode(hash));
     }
 
     public String computeSignature(
@@ -142,8 +165,6 @@ public class NetsuiteServiceManager {
 
         String key = consumerSecret + '&' + tokenSecret;
 
-        String signature = computeShaHash(baseString, key, "HmacSHA256");
-
-        return signature;
+        return computeShaHash(baseString, key, "HmacSHA256");
     }
 }
