@@ -1,13 +1,13 @@
 package com.netsuite.application;
 
-import com.netsuite.webservices.platform.core_2022_1.AttachReference;
-import com.netsuite.webservices.platform.core_2022_1.BaseRef;
-import com.netsuite.webservices.platform.core_2022_1.DeletionReason;
-import com.netsuite.webservices.platform.core_2022_1.DetachReference;
-import com.netsuite.webservices.platform.core_2022_1.Record;
-import com.netsuite.webservices.platform.messages_2022_1.WriteResponse;
-import com.netsuite.webservices.platform.messages_2022_1.WriteResponseList;
-import com.netsuite.webservices.platform_2022_1.NetSuitePortType;
+import com.netsuite.webservices.platform.core_2018_2.AttachReference;
+import com.netsuite.webservices.platform.core_2018_2.BaseRef;
+import com.netsuite.webservices.platform.core_2018_2.DeletionReason;
+import com.netsuite.webservices.platform.core_2018_2.DetachReference;
+import com.netsuite.webservices.platform.core_2018_2.Record;
+import com.netsuite.webservices.platform.messages_2018_2.WriteResponse;
+import com.netsuite.webservices.platform.messages_2018_2.WriteResponseList;
+import com.netsuite.webservices.platform_2018_2.NetSuitePortType;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

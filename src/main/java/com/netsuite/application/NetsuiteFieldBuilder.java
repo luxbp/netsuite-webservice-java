@@ -1,11 +1,11 @@
 package com.netsuite.application;
 
-import com.netsuite.webservices.platform.core_2022_1.Record;
-import com.netsuite.webservices.documents.filecabinet_2022_1.File;
-import com.netsuite.webservices.documents.filecabinet_2022_1.types.FileAttachFrom;
-import com.netsuite.webservices.documents.filecabinet_2022_1.types.MediaType;
-import com.netsuite.webservices.platform.common_2022_1.types.Country;
-import com.netsuite.webservices.platform.core_2022_1.*;
+import com.netsuite.webservices.platform.core_2018_2.Record;
+import com.netsuite.webservices.documents.filecabinet_2018_2.File;
+import com.netsuite.webservices.documents.filecabinet_2018_2.types.FileAttachFrom;
+import com.netsuite.webservices.documents.filecabinet_2018_2.types.MediaType;
+import com.netsuite.webservices.platform.common_2018_2.types.Country;
+import com.netsuite.webservices.platform.core_2018_2.*;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;

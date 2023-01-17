@@ -1,12 +1,12 @@
 package com.netsuite.application;
 
-import com.netsuite.webservices.platform.core_2022_1.DataCenterUrls;
-import com.netsuite.webservices.platform.core_2022_1.TokenPassport;
-import com.netsuite.webservices.platform.core_2022_1.TokenPassportSignature;
-import com.netsuite.webservices.platform.core_2022_1.types.SignatureAlgorithm;
-import com.netsuite.webservices.platform_2022_1.NetSuiteBindingStub;
-import com.netsuite.webservices.platform_2022_1.NetSuitePortType;
-import com.netsuite.webservices.platform_2022_1.NetSuiteServiceLocator;
+import com.netsuite.webservices.platform.core_2018_2.DataCenterUrls;
+import com.netsuite.webservices.platform.core_2018_2.TokenPassport;
+import com.netsuite.webservices.platform.core_2018_2.TokenPassportSignature;
+import com.netsuite.webservices.platform.core_2018_2.types.SignatureAlgorithm;
+import com.netsuite.webservices.platform_2018_2.NetSuiteBindingStub;
+import com.netsuite.webservices.platform_2018_2.NetSuitePortType;
+import com.netsuite.webservices.platform_2018_2.NetSuiteServiceLocator;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.apache.commons.lang3.RandomStringUtils;
 
@@ -91,7 +91,7 @@ public class NetsuiteServiceManager {
         NetSuiteBindingStub stub = ((NetSuiteBindingStub) port);
         stub.clearHeaders();
         stub.setHeader(
-                String.format("urn:messages_%s.platform.webservices.netsuite.com", env.get("NETSUITE_VERSION", "2022_1")),
+                String.format("urn:messages_%s.platform.webservices.netsuite.com", env.get("NETSUITE_VERSION", "2018_2")),
                 "tokenPassport",
                 createPassport(env)
         );
@@ -154,7 +154,7 @@ public class NetsuiteServiceManager {
         return new String(java.util.Base64.getEncoder().encode(hash));
     }
 
-    public String computeSignature(
+    protected String computeSignature(
             String account,
             String consumerKey,
             String consumerSecret,

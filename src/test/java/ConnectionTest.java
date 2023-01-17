@@ -1,5 +1,5 @@
 import com.netsuite.application.NetsuiteServiceManager;
-import com.netsuite.webservices.platform_2022_1.NetSuitePortType;
+import com.netsuite.webservices.platform_2018_2.NetSuitePortType;
 import io.github.cdimascio.dotenv.Dotenv;
 import org.junit.Test;
 
