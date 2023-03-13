@@ -8,7 +8,6 @@ This repository is for building the WSDL Dependency for interacting with Netsuit
 ## Deployments
 This package is automatically deployed to Github packages when a release tag is created using a workflow located in [.github/workflows/maven-deploy.yml](./.github/workflows/maven-deploy.yml)
 
-
 ## Build
 - Run `mvn clean` first if updating.
 - Run `mvn install` to generate NetSuite SOAP web services.
@@ -29,11 +28,6 @@ Update the WSDL URL in `build.xml`
     verbose="true"
     timeout="120000"
     url="https://webservices.netsuite.com/wsdl/v2022_1_0/netsuite.wsdl"/>
-```
-
-Update the version number in `.env`.
-```shell
-NETSUITE_VERSION="2022_1"
 ```
 
 ## Troubleshooting
