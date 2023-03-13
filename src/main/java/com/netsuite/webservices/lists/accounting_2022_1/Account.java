@@ -2,7 +2,7 @@
  * Account.java
  *
  * This file was auto-generated from WSDL
- * by the Apache Axis 1.4 Jul 28, 2010 (04:07:04 PDT) WSDL2Java emitter.
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
 package com.netsuite.webservices.lists.accounting_2022_1;

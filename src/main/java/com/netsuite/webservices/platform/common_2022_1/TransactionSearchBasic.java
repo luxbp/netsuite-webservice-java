@@ -2,7 +2,7 @@
  * TransactionSearchBasic.java
  *
  * This file was auto-generated from WSDL
- * by the Apache Axis 1.4 Jul 28, 2010 (04:07:04 PDT) WSDL2Java emitter.
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
 package com.netsuite.webservices.platform.common_2022_1;
@@ -717,6 +717,717 @@ public class TransactionSearchBasic  extends com.netsuite.webservices.platform.c
     private com.netsuite.webservices.platform.core_2022_1.SearchCustomFieldList customFieldList;
 
     public TransactionSearchBasic() {
+    }
+
+    public TransactionSearchBasic(
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField account,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField accountType,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField acctCorpCardExp,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField actualProductionEndDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField actualProductionStartDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField actualShipDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField altSalesAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField altSalesNetAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField amount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField amountPaid,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField amountRemaining,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField amountUnbilled,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField anyLineItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField appliedToForeignAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField appliedToIsFxVariance,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField appliedToLinkAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField appliedToLinkType,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField appliedToTransaction,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField applyingForeignAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField applyingIsFxVariance,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField applyingLinkAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField applyingLinkType,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField applyingTransaction,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField approvalStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField authCode,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField autoCalculateLag,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField avsStreetMatch,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField avsZipMatch,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField billable,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField billAddress,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField billAddressee,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField billAttention,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField billCity,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField billCountry,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField billCounty,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField billedDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField billingAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField billingSchedule,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField billingStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField billingTransaction,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField billPhone,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField billState,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField billVarianceStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField billZip,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField binNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField binNumberQuantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField bomQuantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField bookSpecificTransaction,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField buildEntireAssembly,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField buildVariance,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField built,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField canHaveStackablePromotions,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField catchUpPeriod,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField ccCustomerCode,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField ccExpireDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField ccName,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField ccNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField chargeType,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField _class,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField cleared,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField closed,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField closeDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField cogs,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField commissionEffectiveDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField commit,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField componentYield,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField confirmationNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField contribution,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField costComponentAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField costComponentCategory,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField costComponentItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField costComponentQuantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField costComponentStandardCost,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField costEstimate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField costEstimateRate,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField costEstimateType,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField createdBy,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField createdFrom,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField creditAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField cscMatch,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField currency,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField customerSubOf,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField customForm,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField customGL,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField custType,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField dateCreated,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField daysOpen,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField daysOverdue,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField debitAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField deferredRevenue,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField deferRevRec,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField department,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField depositDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField depositTransaction,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField drAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField dueDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField email,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField employee,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField endDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField entity,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField entityStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField estGrossProfit,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField estGrossProfitPct,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField exchangeRate,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField excludeCommission,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField excludeFromRateRequest,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField expectedCloseDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField expectedReceiptDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField expenseCategory,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField expenseDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField externalId,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField externalIdString,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField finChrg,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField firmed,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField forecastType,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField fulfillingTransaction,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField fxAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField fxAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField fxCostEstimate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField fxCostEstimateRate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField fxEstGrossProfit,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField fxTranCostEstimate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField fxVsoeAllocation,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField fxVsoeAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField fxVsoePrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField gcoAvailabelToCharge,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField gcoAvailableToRefund,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField gcoAvsStreetMatch,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField gcoAvsZipMatch,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField gcoBuyerAccountAge,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField gcoBuyerIp,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField gcoChargeAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField gcoChargebackAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField gcoConfirmedChargedTotal,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField gcoConfirmedRefundedTotal,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField gcoCreditcardNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField gcoCscMatch,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField gcoFinancialState,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField gcoFulfillmentState,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField gcoOrderId,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField gcoOrderTotal,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField gcoPromotionAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField gcoPromotionName,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField gcoRefundAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField gcoShippingTotal,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField gcoStateChangedDetail,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField giftCertificate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField grossAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField includeInForecast,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField incoterm,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField intercoStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField intercoTransaction,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField internalId,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField internalIdNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField inventoryLocation,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField inventorySubsidiary,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField inVsoeBundle,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isAllocation,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isBackflush,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isGcoChargeback,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isGcoChargeConfirmed,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isGcoPaymentGuaranteed,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isGcoRefundConfirmed,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isInsideDelivery,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isInsidePickup,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isIntercompanyAdjustment,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isInTransitPayment,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isMultiShipTo,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isPayPalMeth,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isReversal,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isRevRecTransaction,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isScrap,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isShipAddress,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isTransferPriceCosting,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isVsoeAlloc,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField isWip,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField item,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField itemFulfillmentChoice,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField itemRevision,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField itemSubOf,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField landedCostPerLine,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField lastModifiedDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField leadSource,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField lineUniqueKey,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField location,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField locationAutoAssigned,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField mainLine,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField mainName,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField manufacturingRouting,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField matchBillToReceipt,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField memo,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField memoMain,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField memorized,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField merchantAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField message,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField multiSubsidiary,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField nameText,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField netAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField nextApprover,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField nextBillDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField nexus,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField noAutoAssignLocation,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField nonReimbursable,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField number,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField oneTimeTotal,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField opportunity,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField orderAllocationStrategy,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField orderPriority,
+           com.netsuite.webservices.platform.core_2022_1.SearchTextNumberField otherRefNum,
+           com.netsuite.webservices.platform.core_2022_1.SearchTextNumberField otherRefNumNonDeposit,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField overheadParentItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField overrideInstallments,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField packageCount,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField paidTransaction,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField parent,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField partner,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField partnerContribution,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField partnerRole,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField partnerTeamMember,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField payingTransaction,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField paymentApproved,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField paymentEventDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField paymentEventHoldReason,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField paymentEventPurchaseCardUsed,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField paymentEventPurchaseDataSent,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField paymentEventResult,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField paymentEventType,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField paymentHold,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField paymentMethod,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField paymentOption,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField payPalPending,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField payPalStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField payPalTranId,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField pnRefNum,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField poAsText,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField policyViolated,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField posting,
+           com.netsuite.webservices.platform.core_2022_1.RecordRef postingPeriod,
+           com.netsuite.webservices.platform.common_2022_1.types.PostingPeriodDate postingPeriodRelative,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField priceLevel,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField printedPickingTicket,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField probability,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField projectedAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField projectTask,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField promoCode,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField purchaseOrder,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField quantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField quantityBilled,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField quantityCommitted,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField quantityPacked,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField quantityPicked,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField quantityRevCommitted,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField quantityShipRecv,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField recognizedRevenue,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField recordType,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField recurAnnuallyTotal,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField recurMonthlyTotal,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField recurQuarterlyTotal,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField recurringBill,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField recurWeeklyTotal,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField refNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField requestedDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField revCommitStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField revCommittingStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField revCommittingTransaction,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField revenueStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField reversalDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField reversalNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField revRecEndDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField revRecOnRevCommitment,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField revRecStartDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField revRecTermInMonths,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField salesEffectiveDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField salesOrder,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField salesRep,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField salesTeamMember,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField salesTeamRole,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField schedulingMethod,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField serialNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField serialNumberCost,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField serialNumberCostAdjustment,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField serialNumberQuantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField serialNumbers,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField shipAddress,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField shipAddressee,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField shipAttention,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField shipCarrier,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField shipCity,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField shipComplete,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField shipCountry,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField shipCounty,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField shipDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchLongField shipGroup,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField shipMethod,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField shipPhone,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField shipping,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField shipRecvStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField shipRecvStatusLine,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField shipState,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField shipTo,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField shipZip,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField source,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField startDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField statistical,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField status,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField subscription,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField subscriptionLine,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField subsidiary,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField subsidiaryTaxRegNum,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField taxItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField taxLine,
+           com.netsuite.webservices.platform.core_2022_1.RecordRef taxPeriod,
+           com.netsuite.webservices.platform.common_2022_1.types.PostingPeriodDate taxPeriodRelative,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField taxPointDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField taxRate,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField terms,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField termsOfSale,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField title,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField toBeEmailed,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField toBePrinted,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField toSubsidiary,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField totalAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField trackingNumbers,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField tranCostEstimate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDateField tranDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField tranEstGrossProfit,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField tranEstGrossProfitPct,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField tranFxEstGrossProfit,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField tranId,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField tranIsVsoeBundle,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField transactionDiscount,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField transactionLineType,
+           com.netsuite.webservices.platform.core_2022_1.SearchStringField transactionNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField transferLocation,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField transferOrderQuantityCommitted,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField transferOrderQuantityPacked,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField transferOrderQuantityPicked,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField transferOrderQuantityReceived,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField transferOrderQuantityShipped,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField type,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField unit,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField unitCostOverride,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField unitsType,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField vendType,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField visibleToCustomer,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField voided,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField vsoeAllocation,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField vsoeAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField vsoeDeferral,
+           com.netsuite.webservices.platform.core_2022_1.SearchBooleanField vsoeDelivered,
+           com.netsuite.webservices.platform.core_2022_1.SearchEnumMultiSelectField vsoePermitDiscount,
+           com.netsuite.webservices.platform.core_2022_1.SearchDoubleField vsoePrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchMultiSelectField webSite,
+           com.netsuite.webservices.platform.core_2022_1.SearchCustomFieldList customFieldList) {
+        this.account = account;
+        this.accountType = accountType;
+        this.acctCorpCardExp = acctCorpCardExp;
+        this.actualProductionEndDate = actualProductionEndDate;
+        this.actualProductionStartDate = actualProductionStartDate;
+        this.actualShipDate = actualShipDate;
+        this.altSalesAmount = altSalesAmount;
+        this.altSalesNetAmount = altSalesNetAmount;
+        this.amount = amount;
+        this.amountPaid = amountPaid;
+        this.amountRemaining = amountRemaining;
+        this.amountUnbilled = amountUnbilled;
+        this.anyLineItem = anyLineItem;
+        this.appliedToForeignAmount = appliedToForeignAmount;
+        this.appliedToIsFxVariance = appliedToIsFxVariance;
+        this.appliedToLinkAmount = appliedToLinkAmount;
+        this.appliedToLinkType = appliedToLinkType;
+        this.appliedToTransaction = appliedToTransaction;
+        this.applyingForeignAmount = applyingForeignAmount;
+        this.applyingIsFxVariance = applyingIsFxVariance;
+        this.applyingLinkAmount = applyingLinkAmount;
+        this.applyingLinkType = applyingLinkType;
+        this.applyingTransaction = applyingTransaction;
+        this.approvalStatus = approvalStatus;
+        this.authCode = authCode;
+        this.autoCalculateLag = autoCalculateLag;
+        this.avsStreetMatch = avsStreetMatch;
+        this.avsZipMatch = avsZipMatch;
+        this.billable = billable;
+        this.billAddress = billAddress;
+        this.billAddressee = billAddressee;
+        this.billAttention = billAttention;
+        this.billCity = billCity;
+        this.billCountry = billCountry;
+        this.billCounty = billCounty;
+        this.billedDate = billedDate;
+        this.billingAccount = billingAccount;
+        this.billingSchedule = billingSchedule;
+        this.billingStatus = billingStatus;
+        this.billingTransaction = billingTransaction;
+        this.billPhone = billPhone;
+        this.billState = billState;
+        this.billVarianceStatus = billVarianceStatus;
+        this.billZip = billZip;
+        this.binNumber = binNumber;
+        this.binNumberQuantity = binNumberQuantity;
+        this.bomQuantity = bomQuantity;
+        this.bookSpecificTransaction = bookSpecificTransaction;
+        this.buildEntireAssembly = buildEntireAssembly;
+        this.buildVariance = buildVariance;
+        this.built = built;
+        this.canHaveStackablePromotions = canHaveStackablePromotions;
+        this.catchUpPeriod = catchUpPeriod;
+        this.ccCustomerCode = ccCustomerCode;
+        this.ccExpireDate = ccExpireDate;
+        this.ccName = ccName;
+        this.ccNumber = ccNumber;
+        this.chargeType = chargeType;
+        this._class = _class;
+        this.cleared = cleared;
+        this.closed = closed;
+        this.closeDate = closeDate;
+        this.cogs = cogs;
+        this.commissionEffectiveDate = commissionEffectiveDate;
+        this.commit = commit;
+        this.componentYield = componentYield;
+        this.confirmationNumber = confirmationNumber;
+        this.contribution = contribution;
+        this.costComponentAmount = costComponentAmount;
+        this.costComponentCategory = costComponentCategory;
+        this.costComponentItem = costComponentItem;
+        this.costComponentQuantity = costComponentQuantity;
+        this.costComponentStandardCost = costComponentStandardCost;
+        this.costEstimate = costEstimate;
+        this.costEstimateRate = costEstimateRate;
+        this.costEstimateType = costEstimateType;
+        this.createdBy = createdBy;
+        this.createdFrom = createdFrom;
+        this.creditAmount = creditAmount;
+        this.cscMatch = cscMatch;
+        this.currency = currency;
+        this.customerSubOf = customerSubOf;
+        this.customForm = customForm;
+        this.customGL = customGL;
+        this.custType = custType;
+        this.dateCreated = dateCreated;
+        this.daysOpen = daysOpen;
+        this.daysOverdue = daysOverdue;
+        this.debitAmount = debitAmount;
+        this.deferredRevenue = deferredRevenue;
+        this.deferRevRec = deferRevRec;
+        this.department = department;
+        this.depositDate = depositDate;
+        this.depositTransaction = depositTransaction;
+        this.drAccount = drAccount;
+        this.dueDate = dueDate;
+        this.email = email;
+        this.employee = employee;
+        this.endDate = endDate;
+        this.entity = entity;
+        this.entityStatus = entityStatus;
+        this.estGrossProfit = estGrossProfit;
+        this.estGrossProfitPct = estGrossProfitPct;
+        this.exchangeRate = exchangeRate;
+        this.excludeCommission = excludeCommission;
+        this.excludeFromRateRequest = excludeFromRateRequest;
+        this.expectedCloseDate = expectedCloseDate;
+        this.expectedReceiptDate = expectedReceiptDate;
+        this.expenseCategory = expenseCategory;
+        this.expenseDate = expenseDate;
+        this.externalId = externalId;
+        this.externalIdString = externalIdString;
+        this.finChrg = finChrg;
+        this.firmed = firmed;
+        this.forecastType = forecastType;
+        this.fulfillingTransaction = fulfillingTransaction;
+        this.fxAccount = fxAccount;
+        this.fxAmount = fxAmount;
+        this.fxCostEstimate = fxCostEstimate;
+        this.fxCostEstimateRate = fxCostEstimateRate;
+        this.fxEstGrossProfit = fxEstGrossProfit;
+        this.fxTranCostEstimate = fxTranCostEstimate;
+        this.fxVsoeAllocation = fxVsoeAllocation;
+        this.fxVsoeAmount = fxVsoeAmount;
+        this.fxVsoePrice = fxVsoePrice;
+        this.gcoAvailabelToCharge = gcoAvailabelToCharge;
+        this.gcoAvailableToRefund = gcoAvailableToRefund;
+        this.gcoAvsStreetMatch = gcoAvsStreetMatch;
+        this.gcoAvsZipMatch = gcoAvsZipMatch;
+        this.gcoBuyerAccountAge = gcoBuyerAccountAge;
+        this.gcoBuyerIp = gcoBuyerIp;
+        this.gcoChargeAmount = gcoChargeAmount;
+        this.gcoChargebackAmount = gcoChargebackAmount;
+        this.gcoConfirmedChargedTotal = gcoConfirmedChargedTotal;
+        this.gcoConfirmedRefundedTotal = gcoConfirmedRefundedTotal;
+        this.gcoCreditcardNumber = gcoCreditcardNumber;
+        this.gcoCscMatch = gcoCscMatch;
+        this.gcoFinancialState = gcoFinancialState;
+        this.gcoFulfillmentState = gcoFulfillmentState;
+        this.gcoOrderId = gcoOrderId;
+        this.gcoOrderTotal = gcoOrderTotal;
+        this.gcoPromotionAmount = gcoPromotionAmount;
+        this.gcoPromotionName = gcoPromotionName;
+        this.gcoRefundAmount = gcoRefundAmount;
+        this.gcoShippingTotal = gcoShippingTotal;
+        this.gcoStateChangedDetail = gcoStateChangedDetail;
+        this.giftCertificate = giftCertificate;
+        this.grossAmount = grossAmount;
+        this.includeInForecast = includeInForecast;
+        this.incoterm = incoterm;
+        this.intercoStatus = intercoStatus;
+        this.intercoTransaction = intercoTransaction;
+        this.internalId = internalId;
+        this.internalIdNumber = internalIdNumber;
+        this.inventoryLocation = inventoryLocation;
+        this.inventorySubsidiary = inventorySubsidiary;
+        this.inVsoeBundle = inVsoeBundle;
+        this.isAllocation = isAllocation;
+        this.isBackflush = isBackflush;
+        this.isGcoChargeback = isGcoChargeback;
+        this.isGcoChargeConfirmed = isGcoChargeConfirmed;
+        this.isGcoPaymentGuaranteed = isGcoPaymentGuaranteed;
+        this.isGcoRefundConfirmed = isGcoRefundConfirmed;
+        this.isInsideDelivery = isInsideDelivery;
+        this.isInsidePickup = isInsidePickup;
+        this.isIntercompanyAdjustment = isIntercompanyAdjustment;
+        this.isInTransitPayment = isInTransitPayment;
+        this.isMultiShipTo = isMultiShipTo;
+        this.isPayPalMeth = isPayPalMeth;
+        this.isReversal = isReversal;
+        this.isRevRecTransaction = isRevRecTransaction;
+        this.isScrap = isScrap;
+        this.isShipAddress = isShipAddress;
+        this.isTransferPriceCosting = isTransferPriceCosting;
+        this.isVsoeAlloc = isVsoeAlloc;
+        this.isWip = isWip;
+        this.item = item;
+        this.itemFulfillmentChoice = itemFulfillmentChoice;
+        this.itemRevision = itemRevision;
+        this.itemSubOf = itemSubOf;
+        this.landedCostPerLine = landedCostPerLine;
+        this.lastModifiedDate = lastModifiedDate;
+        this.leadSource = leadSource;
+        this.lineUniqueKey = lineUniqueKey;
+        this.location = location;
+        this.locationAutoAssigned = locationAutoAssigned;
+        this.mainLine = mainLine;
+        this.mainName = mainName;
+        this.manufacturingRouting = manufacturingRouting;
+        this.matchBillToReceipt = matchBillToReceipt;
+        this.memo = memo;
+        this.memoMain = memoMain;
+        this.memorized = memorized;
+        this.merchantAccount = merchantAccount;
+        this.message = message;
+        this.multiSubsidiary = multiSubsidiary;
+        this.nameText = nameText;
+        this.netAmount = netAmount;
+        this.nextApprover = nextApprover;
+        this.nextBillDate = nextBillDate;
+        this.nexus = nexus;
+        this.noAutoAssignLocation = noAutoAssignLocation;
+        this.nonReimbursable = nonReimbursable;
+        this.number = number;
+        this.oneTimeTotal = oneTimeTotal;
+        this.opportunity = opportunity;
+        this.orderAllocationStrategy = orderAllocationStrategy;
+        this.orderPriority = orderPriority;
+        this.otherRefNum = otherRefNum;
+        this.otherRefNumNonDeposit = otherRefNumNonDeposit;
+        this.overheadParentItem = overheadParentItem;
+        this.overrideInstallments = overrideInstallments;
+        this.packageCount = packageCount;
+        this.paidTransaction = paidTransaction;
+        this.parent = parent;
+        this.partner = partner;
+        this.partnerContribution = partnerContribution;
+        this.partnerRole = partnerRole;
+        this.partnerTeamMember = partnerTeamMember;
+        this.payingTransaction = payingTransaction;
+        this.paymentApproved = paymentApproved;
+        this.paymentEventDate = paymentEventDate;
+        this.paymentEventHoldReason = paymentEventHoldReason;
+        this.paymentEventPurchaseCardUsed = paymentEventPurchaseCardUsed;
+        this.paymentEventPurchaseDataSent = paymentEventPurchaseDataSent;
+        this.paymentEventResult = paymentEventResult;
+        this.paymentEventType = paymentEventType;
+        this.paymentHold = paymentHold;
+        this.paymentMethod = paymentMethod;
+        this.paymentOption = paymentOption;
+        this.payPalPending = payPalPending;
+        this.payPalStatus = payPalStatus;
+        this.payPalTranId = payPalTranId;
+        this.pnRefNum = pnRefNum;
+        this.poAsText = poAsText;
+        this.policyViolated = policyViolated;
+        this.posting = posting;
+        this.postingPeriod = postingPeriod;
+        this.postingPeriodRelative = postingPeriodRelative;
+        this.priceLevel = priceLevel;
+        this.printedPickingTicket = printedPickingTicket;
+        this.probability = probability;
+        this.projectedAmount = projectedAmount;
+        this.projectTask = projectTask;
+        this.promoCode = promoCode;
+        this.purchaseOrder = purchaseOrder;
+        this.quantity = quantity;
+        this.quantityBilled = quantityBilled;
+        this.quantityCommitted = quantityCommitted;
+        this.quantityPacked = quantityPacked;
+        this.quantityPicked = quantityPicked;
+        this.quantityRevCommitted = quantityRevCommitted;
+        this.quantityShipRecv = quantityShipRecv;
+        this.recognizedRevenue = recognizedRevenue;
+        this.recordType = recordType;
+        this.recurAnnuallyTotal = recurAnnuallyTotal;
+        this.recurMonthlyTotal = recurMonthlyTotal;
+        this.recurQuarterlyTotal = recurQuarterlyTotal;
+        this.recurringBill = recurringBill;
+        this.recurWeeklyTotal = recurWeeklyTotal;
+        this.refNumber = refNumber;
+        this.requestedDate = requestedDate;
+        this.revCommitStatus = revCommitStatus;
+        this.revCommittingStatus = revCommittingStatus;
+        this.revCommittingTransaction = revCommittingTransaction;
+        this.revenueStatus = revenueStatus;
+        this.reversalDate = reversalDate;
+        this.reversalNumber = reversalNumber;
+        this.revRecEndDate = revRecEndDate;
+        this.revRecOnRevCommitment = revRecOnRevCommitment;
+        this.revRecStartDate = revRecStartDate;
+        this.revRecTermInMonths = revRecTermInMonths;
+        this.salesEffectiveDate = salesEffectiveDate;
+        this.salesOrder = salesOrder;
+        this.salesRep = salesRep;
+        this.salesTeamMember = salesTeamMember;
+        this.salesTeamRole = salesTeamRole;
+        this.schedulingMethod = schedulingMethod;
+        this.serialNumber = serialNumber;
+        this.serialNumberCost = serialNumberCost;
+        this.serialNumberCostAdjustment = serialNumberCostAdjustment;
+        this.serialNumberQuantity = serialNumberQuantity;
+        this.serialNumbers = serialNumbers;
+        this.shipAddress = shipAddress;
+        this.shipAddressee = shipAddressee;
+        this.shipAttention = shipAttention;
+        this.shipCarrier = shipCarrier;
+        this.shipCity = shipCity;
+        this.shipComplete = shipComplete;
+        this.shipCountry = shipCountry;
+        this.shipCounty = shipCounty;
+        this.shipDate = shipDate;
+        this.shipGroup = shipGroup;
+        this.shipMethod = shipMethod;
+        this.shipPhone = shipPhone;
+        this.shipping = shipping;
+        this.shipRecvStatus = shipRecvStatus;
+        this.shipRecvStatusLine = shipRecvStatusLine;
+        this.shipState = shipState;
+        this.shipTo = shipTo;
+        this.shipZip = shipZip;
+        this.source = source;
+        this.startDate = startDate;
+        this.statistical = statistical;
+        this.status = status;
+        this.subscription = subscription;
+        this.subscriptionLine = subscriptionLine;
+        this.subsidiary = subsidiary;
+        this.subsidiaryTaxRegNum = subsidiaryTaxRegNum;
+        this.taxItem = taxItem;
+        this.taxLine = taxLine;
+        this.taxPeriod = taxPeriod;
+        this.taxPeriodRelative = taxPeriodRelative;
+        this.taxPointDate = taxPointDate;
+        this.taxRate = taxRate;
+        this.terms = terms;
+        this.termsOfSale = termsOfSale;
+        this.title = title;
+        this.toBeEmailed = toBeEmailed;
+        this.toBePrinted = toBePrinted;
+        this.toSubsidiary = toSubsidiary;
+        this.totalAmount = totalAmount;
+        this.trackingNumbers = trackingNumbers;
+        this.tranCostEstimate = tranCostEstimate;
+        this.tranDate = tranDate;
+        this.tranEstGrossProfit = tranEstGrossProfit;
+        this.tranEstGrossProfitPct = tranEstGrossProfitPct;
+        this.tranFxEstGrossProfit = tranFxEstGrossProfit;
+        this.tranId = tranId;
+        this.tranIsVsoeBundle = tranIsVsoeBundle;
+        this.transactionDiscount = transactionDiscount;
+        this.transactionLineType = transactionLineType;
+        this.transactionNumber = transactionNumber;
+        this.transferLocation = transferLocation;
+        this.transferOrderQuantityCommitted = transferOrderQuantityCommitted;
+        this.transferOrderQuantityPacked = transferOrderQuantityPacked;
+        this.transferOrderQuantityPicked = transferOrderQuantityPicked;
+        this.transferOrderQuantityReceived = transferOrderQuantityReceived;
+        this.transferOrderQuantityShipped = transferOrderQuantityShipped;
+        this.type = type;
+        this.unit = unit;
+        this.unitCostOverride = unitCostOverride;
+        this.unitsType = unitsType;
+        this.vendType = vendType;
+        this.visibleToCustomer = visibleToCustomer;
+        this.voided = voided;
+        this.vsoeAllocation = vsoeAllocation;
+        this.vsoeAmount = vsoeAmount;
+        this.vsoeDeferral = vsoeDeferral;
+        this.vsoeDelivered = vsoeDelivered;
+        this.vsoePermitDiscount = vsoePermitDiscount;
+        this.vsoePrice = vsoePrice;
+        this.webSite = webSite;
+        this.customFieldList = customFieldList;
     }
 
 

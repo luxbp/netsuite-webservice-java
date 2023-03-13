@@ -2,7 +2,7 @@
  * ItemSearchRowBasic.java
  *
  * This file was auto-generated from WSDL
- * by the Apache Axis 1.4 Jul 28, 2010 (04:07:04 PDT) WSDL2Java emitter.
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
  */
 
 package com.netsuite.webservices.platform.common_2022_1;
@@ -681,6 +681,681 @@ public class ItemSearchRowBasic  extends com.netsuite.webservices.platform.core_
     private com.netsuite.webservices.platform.core_2022_1.SearchColumnCustomFieldList customFieldList;
 
     public ItemSearchRowBasic() {
+    }
+
+    public ItemSearchRowBasic(
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] accBookRevRecForecastRule,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] accountingBook,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] accountingBookAmortization,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] accountingBookCreatePlansOn,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] accountingBookRevRecRule,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] accountingBookRevRecSchedule,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] allowedShippingMethod,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] alternateDemandSourceItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] assetAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] atpLeadTime,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] atpMethod,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] autoLeadTime,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] autoPreferredStockLevel,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] autoReorderPoint,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] availableToPartners,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] averageCost,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] backwardConsumptionDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] basePrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] billExchRateVarianceAcct,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] billPriceVarianceAcct,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] billQtyVarianceAcct,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] binNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] binOnHandAvail,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] binOnHandCount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] bomQuantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] buildEntireAssembly,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] buildTime,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] buildTimeLotSize,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] buyItNowPrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] category,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] categoryPreferred,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] _class,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] componentYield,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] consumptionUnit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] contingentRevenueHandling,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] conversionRate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] copyDescription,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] correlatedItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] correlatedItemCorrelation,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] correlatedItemCount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] correlatedItemLift,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] correlatedItemPurchaseRate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] cost,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] costAccountingStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] costCategory,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] costEstimate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] costEstimateType,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] costingMethod,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] countryOfManufacture,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDateField[] created,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] createJob,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] createRevenuePlansOn,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] custReturnVarianceAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDateField[] dateViewed,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] daysBeforeExpiration,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] defaultReturnCost,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] defaultShippingMethod,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] deferredExpenseAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] deferredRevenueAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] deferRevRec,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] demandModifier,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] demandSource,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] demandTimeFence,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] department,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] departmentnohierarchy,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] directRevenuePosting,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] displayIneBayStore,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] displayName,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] distributionCategory,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] distributionNetwork,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] dontShowPrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] eBayItemDescription,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] eBayItemSubtitle,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] eBayItemTitle,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] ebayRelistingOption,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] effectiveBomControl,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDateField[] effectiveDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] effectiveRevision,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] enableCatchWeight,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] endAuctionsWhenOutOfStock,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] excludeFromSitemap,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] expenseAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] externalId,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] featuredDescription,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] feedDescription,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] feedName,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] fixedBuildTime,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] fixedLotSize,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] forwardConsumptionDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] fraudRisk,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] froogleProductFeed,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] futureHorizon,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] fxCost,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] gainLossAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] generateAccruals,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] giftCertAuthCode,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] giftCertEmail,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] giftCertExpirationDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] giftCertFrom,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] giftCertMessage,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] giftCertOriginalAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] giftCertRecipient,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] hierarchyNode,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] hierarchyVersion,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] hits,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] imageUrl,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] includeChildren,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] incomeAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] intercoDefRevAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] intercoExpenseAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] intercoIncomeAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] internalId,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] inventoryLocation,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] invtClassification,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] invtCountInterval,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isAvailable,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isDropShipItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isFulfillable,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isGcoCompliant,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isInactive,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isLotItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isOnline,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isSerialItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isSpecialOrderItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isSpecialWorkOrderItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isStorePickupAllowed,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] issueProduct,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isTaxable,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isVsoeBundle,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] isWip,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] itemId,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] itemRevenueCategory,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] itemUrl,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDateField[] lastInvtCountDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] lastPurchasePrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDateField[] lastQuantityAvailableChange,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] leadTime,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] liabilityAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] listingDuration,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] location,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] locationAllowStorePickup,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationAtpLeadTime,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationAverageCost,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] locationBinQuantityAvailable,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationBuildTime,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationCost,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] locationCostAccountingStatus,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationDefaultReturnCost,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] locationDemandSource,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] locationDemandTimeFence,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationFixedLotSize,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] locationInventoryCostTemplate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] locationInvtClassification,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] locationInvtCountInterval,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDateField[] locationLastInvtCountDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] locationLeadTime,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDateField[] locationNextInvtCountDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] locationPeriodicLotSizeDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] locationPeriodicLotSizeType,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationPreferredStockLevel,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationQtyAvailForStorePickup,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationQuantityAvailable,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationQuantityBackOrdered,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationQuantityCommitted,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationQuantityInTransit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationQuantityOnHand,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationQuantityOnOrder,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationReOrderPoint,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] locationRescheduleInDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] locationRescheduleOutDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationSafetyStockLevel,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationStorePickupBufferStock,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] locationSupplyLotSizingMethod,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] locationSupplyTimeFence,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] locationSupplyType,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] locationTotalValue,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] locBackwardConsumptionDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] locForwardConsumptionDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] lowerWarningLimit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] manufacturer,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] manufacturerAddr1,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] manufacturerCity,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] manufacturerState,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] manufacturerTariff,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] manufacturerTaxId,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] manufacturerZip,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] manufacturingChargeItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] matchBillToReceipt,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] maximumQuantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] memberItem,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] memberQuantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] metaTagHtml,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] minimumQuantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDateField[] modified,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] mossApplies,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] mpn,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] multManufactureAddr,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] nextagCategory,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] nextagProductFeed,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDateField[] nextInvtCountDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] noPriceMessage,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] numActiveListings,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] numberAllowedDownloads,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] numCurrentlyListed,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDateField[] obsoleteDate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] obsoleteRevision,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] offerSupport,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] onlineCustomerPrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] onlinePrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] onSpecial,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] otherPrices,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] otherVendor,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] outOfStockBehavior,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] outOfStockMessage,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] overallQuantityPricingType,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] overheadType,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] pageTitle,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] parent,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] periodicLotSizeDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] periodicLotSizeType,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] planningItemCategory,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] preferenceCriterion,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] preferredBin,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] preferredLocation,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] preferredStockLevel,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] preferredStockLevelDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] pricesIncludeTax,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] pricingGroup,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] primaryCategory,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] prodPriceVarianceAcct,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] prodQtyVarianceAcct,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] purchaseDescription,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] purchaseOrderAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] purchaseOrderQuantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] purchaseOrderQuantityDiff,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] purchasePriceVarianceAcct,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] purchaseUnit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] quantityAvailable,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] quantityBackOrdered,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] quantityCommitted,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] quantityOnHand,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] quantityOnOrder,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] quantityPricingSchedule,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] receiptAmount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] receiptQuantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] receiptQuantityDiff,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] reorderMultiple,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] reOrderPoint,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] rescheduleInDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] rescheduleOutDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] reservePrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] revenueAllocationGroup,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] revenueRecognitionRule,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] revRecForecastRule,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] revReclassFXAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] revRecSchedule,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] roundUpAsComponent,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] safetyStockLevel,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] safetyStockLevelDays,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] salesDescription,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] salesTaxCode,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] saleUnit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] sameAsPrimaryBookAmortization,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] sameAsPrimaryBookRevRec,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] scheduleBCode,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] scheduleBNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] scheduleBQuantity,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] scrapAcct,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] searchKeywords,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] seasonalDemand,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] secondaryConsumptionUnit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] secondaryPurchaseUnit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] secondarySaleUnit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] secondaryStockUnit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] secondaryUnitsType,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] sellOnEBay,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] serialNumber,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] serialNumberLocation,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] shipIndividually,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] shipPackage,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] shippingCarrier,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] shippingRate,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] shoppingDotComCategory,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] shoppingProductFeed,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] shopzillaCategoryId,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] shopzillaProductFeed,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] sitemapPriority,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] softDescriptor,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] startingPrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] stockDescription,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] stockUnit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] storeDescription,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] storeDetailedDescription,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] storeDisplayImage,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] storeDisplayName,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] storeDisplayThumbnail,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] subsidiary,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] subType,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] supplyLotSizingMethod,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] supplyReplenishmentMethod,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnLongField[] supplyTimeFence,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] supplyType,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] taxSchedule,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] thumbNailUrl,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] totalValue,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] trackLandedCost,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] transferPrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] type,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] unbuildVarianceAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] unitsType,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] upcCode,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] upperWarningLimit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] urlComponent,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] useBins,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] useComponentYield,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] useMarginalRates,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] vendor,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] vendorCode,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] vendorCost,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] vendorCostEntered,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] vendorName,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnStringField[] vendorPriceCurrency,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] vendorSchedule,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] vendReturnVarianceAccount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] vsoeDeferral,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] vsoeDelivered,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] vsoePermitDiscount,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] vsoePrice,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] vsoeSopGroup,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] webSite,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnDoubleField[] weight,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnEnumSelectField[] weightUnit,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] wipAcct,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnSelectField[] wipVarianceAcct,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnBooleanField[] yahooProductFeed,
+           com.netsuite.webservices.platform.core_2022_1.SearchColumnCustomFieldList customFieldList) {
+        this.accBookRevRecForecastRule = accBookRevRecForecastRule;
+        this.accountingBook = accountingBook;
+        this.accountingBookAmortization = accountingBookAmortization;
+        this.accountingBookCreatePlansOn = accountingBookCreatePlansOn;
+        this.accountingBookRevRecRule = accountingBookRevRecRule;
+        this.accountingBookRevRecSchedule = accountingBookRevRecSchedule;
+        this.allowedShippingMethod = allowedShippingMethod;
+        this.alternateDemandSourceItem = alternateDemandSourceItem;
+        this.assetAccount = assetAccount;
+        this.atpLeadTime = atpLeadTime;
+        this.atpMethod = atpMethod;
+        this.autoLeadTime = autoLeadTime;
+        this.autoPreferredStockLevel = autoPreferredStockLevel;
+        this.autoReorderPoint = autoReorderPoint;
+        this.availableToPartners = availableToPartners;
+        this.averageCost = averageCost;
+        this.backwardConsumptionDays = backwardConsumptionDays;
+        this.basePrice = basePrice;
+        this.billExchRateVarianceAcct = billExchRateVarianceAcct;
+        this.billPriceVarianceAcct = billPriceVarianceAcct;
+        this.billQtyVarianceAcct = billQtyVarianceAcct;
+        this.binNumber = binNumber;
+        this.binOnHandAvail = binOnHandAvail;
+        this.binOnHandCount = binOnHandCount;
+        this.bomQuantity = bomQuantity;
+        this.buildEntireAssembly = buildEntireAssembly;
+        this.buildTime = buildTime;
+        this.buildTimeLotSize = buildTimeLotSize;
+        this.buyItNowPrice = buyItNowPrice;
+        this.category = category;
+        this.categoryPreferred = categoryPreferred;
+        this._class = _class;
+        this.componentYield = componentYield;
+        this.consumptionUnit = consumptionUnit;
+        this.contingentRevenueHandling = contingentRevenueHandling;
+        this.conversionRate = conversionRate;
+        this.copyDescription = copyDescription;
+        this.correlatedItem = correlatedItem;
+        this.correlatedItemCorrelation = correlatedItemCorrelation;
+        this.correlatedItemCount = correlatedItemCount;
+        this.correlatedItemLift = correlatedItemLift;
+        this.correlatedItemPurchaseRate = correlatedItemPurchaseRate;
+        this.cost = cost;
+        this.costAccountingStatus = costAccountingStatus;
+        this.costCategory = costCategory;
+        this.costEstimate = costEstimate;
+        this.costEstimateType = costEstimateType;
+        this.costingMethod = costingMethod;
+        this.countryOfManufacture = countryOfManufacture;
+        this.created = created;
+        this.createJob = createJob;
+        this.createRevenuePlansOn = createRevenuePlansOn;
+        this.custReturnVarianceAccount = custReturnVarianceAccount;
+        this.dateViewed = dateViewed;
+        this.daysBeforeExpiration = daysBeforeExpiration;
+        this.defaultReturnCost = defaultReturnCost;
+        this.defaultShippingMethod = defaultShippingMethod;
+        this.deferredExpenseAccount = deferredExpenseAccount;
+        this.deferredRevenueAccount = deferredRevenueAccount;
+        this.deferRevRec = deferRevRec;
+        this.demandModifier = demandModifier;
+        this.demandSource = demandSource;
+        this.demandTimeFence = demandTimeFence;
+        this.department = department;
+        this.departmentnohierarchy = departmentnohierarchy;
+        this.directRevenuePosting = directRevenuePosting;
+        this.displayIneBayStore = displayIneBayStore;
+        this.displayName = displayName;
+        this.distributionCategory = distributionCategory;
+        this.distributionNetwork = distributionNetwork;
+        this.dontShowPrice = dontShowPrice;
+        this.eBayItemDescription = eBayItemDescription;
+        this.eBayItemSubtitle = eBayItemSubtitle;
+        this.eBayItemTitle = eBayItemTitle;
+        this.ebayRelistingOption = ebayRelistingOption;
+        this.effectiveBomControl = effectiveBomControl;
+        this.effectiveDate = effectiveDate;
+        this.effectiveRevision = effectiveRevision;
+        this.enableCatchWeight = enableCatchWeight;
+        this.endAuctionsWhenOutOfStock = endAuctionsWhenOutOfStock;
+        this.excludeFromSitemap = excludeFromSitemap;
+        this.expenseAccount = expenseAccount;
+        this.externalId = externalId;
+        this.featuredDescription = featuredDescription;
+        this.feedDescription = feedDescription;
+        this.feedName = feedName;
+        this.fixedBuildTime = fixedBuildTime;
+        this.fixedLotSize = fixedLotSize;
+        this.forwardConsumptionDays = forwardConsumptionDays;
+        this.fraudRisk = fraudRisk;
+        this.froogleProductFeed = froogleProductFeed;
+        this.futureHorizon = futureHorizon;
+        this.fxCost = fxCost;
+        this.gainLossAccount = gainLossAccount;
+        this.generateAccruals = generateAccruals;
+        this.giftCertAuthCode = giftCertAuthCode;
+        this.giftCertEmail = giftCertEmail;
+        this.giftCertExpirationDate = giftCertExpirationDate;
+        this.giftCertFrom = giftCertFrom;
+        this.giftCertMessage = giftCertMessage;
+        this.giftCertOriginalAmount = giftCertOriginalAmount;
+        this.giftCertRecipient = giftCertRecipient;
+        this.hierarchyNode = hierarchyNode;
+        this.hierarchyVersion = hierarchyVersion;
+        this.hits = hits;
+        this.imageUrl = imageUrl;
+        this.includeChildren = includeChildren;
+        this.incomeAccount = incomeAccount;
+        this.intercoDefRevAccount = intercoDefRevAccount;
+        this.intercoExpenseAccount = intercoExpenseAccount;
+        this.intercoIncomeAccount = intercoIncomeAccount;
+        this.internalId = internalId;
+        this.inventoryLocation = inventoryLocation;
+        this.invtClassification = invtClassification;
+        this.invtCountInterval = invtCountInterval;
+        this.isAvailable = isAvailable;
+        this.isDropShipItem = isDropShipItem;
+        this.isFulfillable = isFulfillable;
+        this.isGcoCompliant = isGcoCompliant;
+        this.isInactive = isInactive;
+        this.isLotItem = isLotItem;
+        this.isOnline = isOnline;
+        this.isSerialItem = isSerialItem;
+        this.isSpecialOrderItem = isSpecialOrderItem;
+        this.isSpecialWorkOrderItem = isSpecialWorkOrderItem;
+        this.isStorePickupAllowed = isStorePickupAllowed;
+        this.issueProduct = issueProduct;
+        this.isTaxable = isTaxable;
+        this.isVsoeBundle = isVsoeBundle;
+        this.isWip = isWip;
+        this.itemId = itemId;
+        this.itemRevenueCategory = itemRevenueCategory;
+        this.itemUrl = itemUrl;
+        this.lastInvtCountDate = lastInvtCountDate;
+        this.lastPurchasePrice = lastPurchasePrice;
+        this.lastQuantityAvailableChange = lastQuantityAvailableChange;
+        this.leadTime = leadTime;
+        this.liabilityAccount = liabilityAccount;
+        this.listingDuration = listingDuration;
+        this.location = location;
+        this.locationAllowStorePickup = locationAllowStorePickup;
+        this.locationAtpLeadTime = locationAtpLeadTime;
+        this.locationAverageCost = locationAverageCost;
+        this.locationBinQuantityAvailable = locationBinQuantityAvailable;
+        this.locationBuildTime = locationBuildTime;
+        this.locationCost = locationCost;
+        this.locationCostAccountingStatus = locationCostAccountingStatus;
+        this.locationDefaultReturnCost = locationDefaultReturnCost;
+        this.locationDemandSource = locationDemandSource;
+        this.locationDemandTimeFence = locationDemandTimeFence;
+        this.locationFixedLotSize = locationFixedLotSize;
+        this.locationInventoryCostTemplate = locationInventoryCostTemplate;
+        this.locationInvtClassification = locationInvtClassification;
+        this.locationInvtCountInterval = locationInvtCountInterval;
+        this.locationLastInvtCountDate = locationLastInvtCountDate;
+        this.locationLeadTime = locationLeadTime;
+        this.locationNextInvtCountDate = locationNextInvtCountDate;
+        this.locationPeriodicLotSizeDays = locationPeriodicLotSizeDays;
+        this.locationPeriodicLotSizeType = locationPeriodicLotSizeType;
+        this.locationPreferredStockLevel = locationPreferredStockLevel;
+        this.locationQtyAvailForStorePickup = locationQtyAvailForStorePickup;
+        this.locationQuantityAvailable = locationQuantityAvailable;
+        this.locationQuantityBackOrdered = locationQuantityBackOrdered;
+        this.locationQuantityCommitted = locationQuantityCommitted;
+        this.locationQuantityInTransit = locationQuantityInTransit;
+        this.locationQuantityOnHand = locationQuantityOnHand;
+        this.locationQuantityOnOrder = locationQuantityOnOrder;
+        this.locationReOrderPoint = locationReOrderPoint;
+        this.locationRescheduleInDays = locationRescheduleInDays;
+        this.locationRescheduleOutDays = locationRescheduleOutDays;
+        this.locationSafetyStockLevel = locationSafetyStockLevel;
+        this.locationStorePickupBufferStock = locationStorePickupBufferStock;
+        this.locationSupplyLotSizingMethod = locationSupplyLotSizingMethod;
+        this.locationSupplyTimeFence = locationSupplyTimeFence;
+        this.locationSupplyType = locationSupplyType;
+        this.locationTotalValue = locationTotalValue;
+        this.locBackwardConsumptionDays = locBackwardConsumptionDays;
+        this.locForwardConsumptionDays = locForwardConsumptionDays;
+        this.lowerWarningLimit = lowerWarningLimit;
+        this.manufacturer = manufacturer;
+        this.manufacturerAddr1 = manufacturerAddr1;
+        this.manufacturerCity = manufacturerCity;
+        this.manufacturerState = manufacturerState;
+        this.manufacturerTariff = manufacturerTariff;
+        this.manufacturerTaxId = manufacturerTaxId;
+        this.manufacturerZip = manufacturerZip;
+        this.manufacturingChargeItem = manufacturingChargeItem;
+        this.matchBillToReceipt = matchBillToReceipt;
+        this.maximumQuantity = maximumQuantity;
+        this.memberItem = memberItem;
+        this.memberQuantity = memberQuantity;
+        this.metaTagHtml = metaTagHtml;
+        this.minimumQuantity = minimumQuantity;
+        this.modified = modified;
+        this.mossApplies = mossApplies;
+        this.mpn = mpn;
+        this.multManufactureAddr = multManufactureAddr;
+        this.nextagCategory = nextagCategory;
+        this.nextagProductFeed = nextagProductFeed;
+        this.nextInvtCountDate = nextInvtCountDate;
+        this.noPriceMessage = noPriceMessage;
+        this.numActiveListings = numActiveListings;
+        this.numberAllowedDownloads = numberAllowedDownloads;
+        this.numCurrentlyListed = numCurrentlyListed;
+        this.obsoleteDate = obsoleteDate;
+        this.obsoleteRevision = obsoleteRevision;
+        this.offerSupport = offerSupport;
+        this.onlineCustomerPrice = onlineCustomerPrice;
+        this.onlinePrice = onlinePrice;
+        this.onSpecial = onSpecial;
+        this.otherPrices = otherPrices;
+        this.otherVendor = otherVendor;
+        this.outOfStockBehavior = outOfStockBehavior;
+        this.outOfStockMessage = outOfStockMessage;
+        this.overallQuantityPricingType = overallQuantityPricingType;
+        this.overheadType = overheadType;
+        this.pageTitle = pageTitle;
+        this.parent = parent;
+        this.periodicLotSizeDays = periodicLotSizeDays;
+        this.periodicLotSizeType = periodicLotSizeType;
+        this.planningItemCategory = planningItemCategory;
+        this.preferenceCriterion = preferenceCriterion;
+        this.preferredBin = preferredBin;
+        this.preferredLocation = preferredLocation;
+        this.preferredStockLevel = preferredStockLevel;
+        this.preferredStockLevelDays = preferredStockLevelDays;
+        this.pricesIncludeTax = pricesIncludeTax;
+        this.pricingGroup = pricingGroup;
+        this.primaryCategory = primaryCategory;
+        this.prodPriceVarianceAcct = prodPriceVarianceAcct;
+        this.prodQtyVarianceAcct = prodQtyVarianceAcct;
+        this.purchaseDescription = purchaseDescription;
+        this.purchaseOrderAmount = purchaseOrderAmount;
+        this.purchaseOrderQuantity = purchaseOrderQuantity;
+        this.purchaseOrderQuantityDiff = purchaseOrderQuantityDiff;
+        this.purchasePriceVarianceAcct = purchasePriceVarianceAcct;
+        this.purchaseUnit = purchaseUnit;
+        this.quantityAvailable = quantityAvailable;
+        this.quantityBackOrdered = quantityBackOrdered;
+        this.quantityCommitted = quantityCommitted;
+        this.quantityOnHand = quantityOnHand;
+        this.quantityOnOrder = quantityOnOrder;
+        this.quantityPricingSchedule = quantityPricingSchedule;
+        this.receiptAmount = receiptAmount;
+        this.receiptQuantity = receiptQuantity;
+        this.receiptQuantityDiff = receiptQuantityDiff;
+        this.reorderMultiple = reorderMultiple;
+        this.reOrderPoint = reOrderPoint;
+        this.rescheduleInDays = rescheduleInDays;
+        this.rescheduleOutDays = rescheduleOutDays;
+        this.reservePrice = reservePrice;
+        this.revenueAllocationGroup = revenueAllocationGroup;
+        this.revenueRecognitionRule = revenueRecognitionRule;
+        this.revRecForecastRule = revRecForecastRule;
+        this.revReclassFXAccount = revReclassFXAccount;
+        this.revRecSchedule = revRecSchedule;
+        this.roundUpAsComponent = roundUpAsComponent;
+        this.safetyStockLevel = safetyStockLevel;
+        this.safetyStockLevelDays = safetyStockLevelDays;
+        this.salesDescription = salesDescription;
+        this.salesTaxCode = salesTaxCode;
+        this.saleUnit = saleUnit;
+        this.sameAsPrimaryBookAmortization = sameAsPrimaryBookAmortization;
+        this.sameAsPrimaryBookRevRec = sameAsPrimaryBookRevRec;
+        this.scheduleBCode = scheduleBCode;
+        this.scheduleBNumber = scheduleBNumber;
+        this.scheduleBQuantity = scheduleBQuantity;
+        this.scrapAcct = scrapAcct;
+        this.searchKeywords = searchKeywords;
+        this.seasonalDemand = seasonalDemand;
+        this.secondaryConsumptionUnit = secondaryConsumptionUnit;
+        this.secondaryPurchaseUnit = secondaryPurchaseUnit;
+        this.secondarySaleUnit = secondarySaleUnit;
+        this.secondaryStockUnit = secondaryStockUnit;
+        this.secondaryUnitsType = secondaryUnitsType;
+        this.sellOnEBay = sellOnEBay;
+        this.serialNumber = serialNumber;
+        this.serialNumberLocation = serialNumberLocation;
+        this.shipIndividually = shipIndividually;
+        this.shipPackage = shipPackage;
+        this.shippingCarrier = shippingCarrier;
+        this.shippingRate = shippingRate;
+        this.shoppingDotComCategory = shoppingDotComCategory;
+        this.shoppingProductFeed = shoppingProductFeed;
+        this.shopzillaCategoryId = shopzillaCategoryId;
+        this.shopzillaProductFeed = shopzillaProductFeed;
+        this.sitemapPriority = sitemapPriority;
+        this.softDescriptor = softDescriptor;
+        this.startingPrice = startingPrice;
+        this.stockDescription = stockDescription;
+        this.stockUnit = stockUnit;
+        this.storeDescription = storeDescription;
+        this.storeDetailedDescription = storeDetailedDescription;
+        this.storeDisplayImage = storeDisplayImage;
+        this.storeDisplayName = storeDisplayName;
+        this.storeDisplayThumbnail = storeDisplayThumbnail;
+        this.subsidiary = subsidiary;
+        this.subType = subType;
+        this.supplyLotSizingMethod = supplyLotSizingMethod;
+        this.supplyReplenishmentMethod = supplyReplenishmentMethod;
+        this.supplyTimeFence = supplyTimeFence;
+        this.supplyType = supplyType;
+        this.taxSchedule = taxSchedule;
+        this.thumbNailUrl = thumbNailUrl;
+        this.totalValue = totalValue;
+        this.trackLandedCost = trackLandedCost;
+        this.transferPrice = transferPrice;
+        this.type = type;
+        this.unbuildVarianceAccount = unbuildVarianceAccount;
+        this.unitsType = unitsType;
+        this.upcCode = upcCode;
+        this.upperWarningLimit = upperWarningLimit;
+        this.urlComponent = urlComponent;
+        this.useBins = useBins;
+        this.useComponentYield = useComponentYield;
+        this.useMarginalRates = useMarginalRates;
+        this.vendor = vendor;
+        this.vendorCode = vendorCode;
+        this.vendorCost = vendorCost;
+        this.vendorCostEntered = vendorCostEntered;
+        this.vendorName = vendorName;
+        this.vendorPriceCurrency = vendorPriceCurrency;
+        this.vendorSchedule = vendorSchedule;
+        this.vendReturnVarianceAccount = vendReturnVarianceAccount;
+        this.vsoeDeferral = vsoeDeferral;
+        this.vsoeDelivered = vsoeDelivered;
+        this.vsoePermitDiscount = vsoePermitDiscount;
+        this.vsoePrice = vsoePrice;
+        this.vsoeSopGroup = vsoeSopGroup;
+        this.webSite = webSite;
+        this.weight = weight;
+        this.weightUnit = weightUnit;
+        this.wipAcct = wipAcct;
+        this.wipVarianceAcct = wipVarianceAcct;
+        this.yahooProductFeed = yahooProductFeed;
+        this.customFieldList = customFieldList;
     }
 
 
